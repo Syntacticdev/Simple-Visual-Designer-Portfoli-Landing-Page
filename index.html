@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'M A VISUAL DESIGNER</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="" class="text_logo">UI.</a>
+
+      <button class="toggle">
+        <i class="fa fa-bars fa-inverse fa-2x"></i>
+      </button>
+
+      <ul class="navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">CV</a></li>
+      </ul>
+    </header>
+    <main>
+      <span class="intro">HELLO, I AM JOHN</span>
+      <h2 class="category">I'M A <span>VISUAL</span> DESIGNER</h2>
+      <p>Are you looking for a designer who works hard but stays humble ?</p>
+      <div class="rec"></div>
+
+      <div class="social_link">
+        <a href="" class="behance"><i class="fab fa-behance"></i></a>
+        <a href="" class="dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="" class="medium"><i class="fab fa-medium"></i></a>
+        <a href="" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </main>
+
+    <footer>
+      <span class="copyright"
+        ><i class="far fa-copyright"></i>2021 Syntactic Dev &VerticalSeparator;
+        All Rights Reserved</span
+      >
+    </footer>
+
+    <script>
+      const toggle_btn = document.querySelector(".toggle");
+      toggle_btn.addEventListener("click", () => {
+        document.querySelector(".navigation").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
